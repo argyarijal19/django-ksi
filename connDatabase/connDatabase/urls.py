@@ -20,6 +20,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('myApp/', include('myApp.urls', namespace='myApp')),
-    re_path(r'^articles/(?P<year>[0-9]{4})/$', views.articles)
+    path('myApp/', include('myApp.urls', namespace='myApp'))
 ]
