@@ -4,3 +4,9 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'Home.html')
+
+
+def articles(request, year):
+    year = year
+    str = year
+    return HttpResponse(year)
